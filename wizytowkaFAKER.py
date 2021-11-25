@@ -34,12 +34,10 @@ class BusinessContact(BaseContact):
     def contact(self):
         print(f'Wybieram numer {self.work_phone} i dzwonie do {self.name}')
 
-    @property
-    def label_length(self):
-        return len(self.name)
 
 b = BusinessContact(name='Pawel Sroka', phone='999', email='przyklad@wp.pl', job='elektryk', company='PZU', work_phone='888222')
 print(b)
+
 
 def create_contact(rodzaj, numer):
     if rodzaj == BaseContact:
